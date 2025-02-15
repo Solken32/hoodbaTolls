@@ -7,6 +7,7 @@ export type Product =  {
 }
 
 export type Categories= {
+    id:number;
     image: string;
     name: string;
 }
@@ -14,4 +15,11 @@ export type Categories= {
 export type Subcategories =  {
     id: number;
     name: string;
+}
+
+export interface CartItem {
+    id: number;
+    name: string;
+    quantity: number;
+    price: number;
 }

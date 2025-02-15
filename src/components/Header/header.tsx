@@ -3,9 +3,14 @@ import { useState } from "react";
 import Link from "next/link";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
+import CartModal from "../Common/CartSidebarModal";
+import { useCart } from "../Context/CardContext";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(false);
+  const { cart } = useCart();
+  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <header className="sticky top-0 z-50 w-full  bg-white shadow-md">
@@ -24,15 +29,29 @@ export default function Header() {
           <Link href="#" className="text-sm font-medium hover:text-gray-600">
             About
           </Link>
-          <Button size="icon" variant="ghost">
-            <ShoppingCart className="h-5 w-5 text-white" />
-          </Button>
+          
+            <button className="relative p-0" onClick={() => setCartOpen(true)}>
+              <ShoppingCart className="h-6 w-6" />
+              {totalItems > 0 && (
+                  <span className="bg-dark absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                  {totalItems}
+                </span>
+              )}
+            </button>
+          
         </nav>
 
         <div className="flex items-center space-x-4 md:hidden">
-          <Button size="icon" variant="ghost">
-            <ShoppingCart className="h-6 w-6" />
-          </Button>
+          
+            <button className="relative p-0" onClick={() => setCartOpen(true)}>
+              <ShoppingCart className="h-6 w-6 text-dark " />
+              {totalItems > 0 && (
+                  <span className="bg-dark absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
+                  {totalItems}
+                </span>
+              )}
+            </button>
+          
           <button className="p-2" onClick={() => setMenuOpen(true)}>
             <Menu className="h-6 w-6 text-dark" />
           </button>
@@ -60,6 +79,11 @@ export default function Header() {
           </aside>
         </div>
       )}
+ 
+      {cartOpen && (
+        <CartModal setCartOpen={setCartOpen}/>
+      )} 
+
     </header>
   );
 }
