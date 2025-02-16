@@ -16,15 +16,23 @@
                             "id": 1001,
                             "name": "Manzana Roja",
                             "price": 1.50,
-                            "description": "Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.Manzana orgánica.",
-                            "image": "/imagess/products/manzana_roja.png"
+                            "description": "Manzana orgánica.",
+                            "description2":"sssssss",
+                            "adicional": "sasa",
+                            "image": "/imagess/products/manzana_roja.png",
+                            "image2": "/imagess/products/manzana_roja.png",
+                            "image3": "/imagess/products/manzana_roja.png"
                         },
                         {
                             "id": 1002,
                             "name": "Banana",
                             "price": 0.80,
                             "description": "Plátanos frescos.",
-                            "image": "/imagess/products/banana.png"
+                            "description2":"sssssss",
+                            "adicional": "sasa",
+                            "image": "/imagess/products/banana.png",
+                            "image2": "/imagess/products/banana.png",
+                            "image3": "/imagess/products/banana.png"
                         }
                     ]
                 }
@@ -47,14 +55,22 @@
                             "name": "Zanahoria",
                             "price": 0.70,
                             "description": "Zanahorias frescas.",
-                            "image": "/imagess/products/zanahoria.png"
+                            "description2":"sssssss",
+                            "adicional": "sasa",
+                            "image": "/imagess/products/zanahoria.png",
+                            "image2": "/imagess/products/zanahoria.png",
+                            "image3": "/imagess/products/zanahoria.png"
                         },
                         {
                             "id": 1004,
                             "name": "Lechuga",
                             "price": 1.20,
                             "description": "Lechuga fresca.",
-                            "image": "/imagess/products/lechuga.png"
+                            "description2":"sssssss",
+                            "adicional": "sasa",
+                            "image": "/imagess/products/lechuga.png",
+                            "image2": "/imagess/products/lechuga.png",
+                            "image3": "/imagess/products/lechuga.png"
                         }
                     ]
                 }

@@ -1,8 +1,18 @@
 "use client"; 
-import Image from "next/image";
+
+
 import { Product } from "@/types/product";
 import { products } from "@/data/products";
 import { useCart } from "../Context/CardContext";
+import ProductInformation from "./productespecification";
+
+import { ChevronLeft, ChevronRight} from "lucide-react";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+
+import {Image} from "@heroui/react";
 
 export default function SingleProduct({ id }: { id: string }){
 
@@ -22,20 +32,69 @@ export default function SingleProduct({ id }: { id: string }){
  
 
     return (
+        <> 
             <section className="bg-white overflow-hidden relative pb-20 pt-5 lg:pt-20 xl:pt-15">
                     <div className=" bg-white max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
                     <div className="bg-white flex flex-col lg:flex-row gap-7.5 xl:gap-17.5">
                         <div className="lg:max-w-[570px] w-full">
                         <div className="lg:min-h-[512px] rounded-lg shadow-1 bg-gray-2 p-4 sm:p-7.5 relative flex items-center justify-center">
-                            <div>
-                            
-                            <Image
-                                src={product.image}
-                                alt="products-details"
-                                width={400}
-                                height={400}
-                            />
-                            </div>
+        
+                            {/* Botón de Retroceder */}
+                            <button className=" text-dark absolute left-2 z-10 bg-white p-2 rounded-full shadow-md" id="prevBtn">
+                                <ChevronLeft size={30} />
+                            </button>
+
+                            {/* Slider de fotos del producto */}
+                            <Swiper
+                                spaceBetween={20}
+                                slidesPerView={1}
+                                navigation={{ nextEl: "#nextBtn", prevEl: "#prevBtn" }}
+                                modules={[Navigation]}
+                                className="w-full max-w-2xl"
+                                >
+                                <SwiperSlide>
+                                    <div className="flex justify-center">
+                                        <Image
+                                            isZoomed
+                                            src={product.image}
+                                            alt="products-details"
+                                            width={400}
+                                            height={400}
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="flex justify-center">
+                                        <Image
+                                            isZoomed
+                                            src={product.image2}
+                                            alt="products-details"
+                                            width={400}
+                                            height={400}
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="flex justify-center">
+                                        <Image
+                                            isZoomed
+                                            src={product.image3}
+                                            alt="products-details"
+                                            width={400}
+                                            height={400}
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+
+                                {/* Botón de Avanzar */}
+                            <button className="absolute right-2 z-10 bg-white text-dark p-2 rounded-full shadow-md" id="nextBtn">
+                                <ChevronRight size={30} />
+                            </button>
+
                         </div>
         
                         {/* ?  &apos;border-blue &apos; :  &apos;border-transparent&apos; */}
@@ -263,8 +322,10 @@ export default function SingleProduct({ id }: { id: string }){
                         </div>
                     </div>
                     </div>
-                </section>
-        
+            </section>
+
+            <ProductInformation item={product} />
+        </>
     );
     
 }
