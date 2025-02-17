@@ -261,17 +261,13 @@ export default function SingleProduct({ id }: { id: string }){
                                 </defs>
                             </svg>
         
-                            <span className="text-green"> Quality </span>
+                            <span className="text-green">{product.estado}</span>
                             </div>
                         </div>
         
                         <h3 className="font-medium text-custom-1 mb-4.5">
-                            <span className="text-sm sm:text-base text-dark">
-                            Precio:
-                            </span>
-                            <span className="text-dark ">
-                            {" "}
-                            S/{product.price}{" "}
+                            <span className="text-dark   text-xl">
+                            S/{(product.price).toFixed(2)}
                             </span>
                         </h3>
         
@@ -282,7 +278,7 @@ export default function SingleProduct({ id }: { id: string }){
                             <div className="flex items-center gap-4">
                                 <div className="min-w-[65px]">
                                 <h4 className="font-semibold text-dark mb-4">Descripción</h4>
-                                <h4 className="text-sm text-dark">{product.description}</h4>
+                                <h4 className="text-l text-dark ">{product.description}</h4>
                                 </div>
         
                                 

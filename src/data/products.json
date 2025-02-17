@@ -2,37 +2,28 @@
     "categories": [
         {
             "id": 1,
-            "name": "Frutas y Verduras",
-            "description": "Frescas y saludables.",
-            "image": "/imagess/categories/fruit.png",
+            "name": "Herramientas eléctricas",
+            "description": "Dispositivos motorizados diseñados para facilitar trabajos de construcción, carpintería y mantenimiento, mejorando la eficiencia y precisión.",
+            "image": "/images/categories/fruit.png",
             "subcategories": [
                 {
-                    "id": 101,
-                    "name": "Frutas",
-                    "description": "Dulces y jugosas.",
-                    "image": "/images/subcategories/frutas.jpg",
+                    "id": 100,
+                    "name": "Hidrolavadoras",
                     "products": [
                         {
-                            "id": 1001,
-                            "name": "Manzana Roja",
-                            "price": 1.50,
-                            "description": "Manzana orgánica.",
-                            "description2":"sssssss",
-                            "adicional": "sasa",
-                            "image": "/imagess/products/manzana_roja.png",
-                            "image2": "/imagess/products/manzana_roja.png",
-                            "image3": "/imagess/products/manzana_roja.png"
-                        },
-                        {
-                            "id": 1002,
-                            "name": "Banana",
-                            "price": 0.80,
-                            "description": "Plátanos frescos.",
-                            "description2":"sssssss",
-                            "adicional": "sasa",
-                            "image": "/imagess/products/banana.png",
-                            "image2": "/imagess/products/banana.png",
-                            "image3": "/imagess/products/banana.png"
+                            "id": 501,
+                            "name": "Hidrolavadora portátil de mano con batería de 15000mAh, 900PSI",
+                            "price": 750,
+                            "marca":"KlrSwp",
+                            "description": "Hidro lavadora portátil demanocon batería de 15000mAh, de 900PSI, con boquilla ajustable 6 en 1, para limpieza de automóviles, barcos y jardines color amarillo. El producto es de marca reconocida, de uso multifuncional y de calidad superior a productos genéricos, confiable y fiable.",
+                            "description2":"**Marca:** KlrSwp\n**Fuente de poder:** Funciona con batería\n**Color:** Amarillo\n**Presión máxima:** 900 libras por pulgada cuadrada\n**Longitud de la manguera:** 5 metros\n**Dimensiones del producto:** 17,32\" de largo x 13,78\" de ancho x 5,2\" de alto",
+                            "adicional": "**Diseño portátil e inalámbrico:**\n- La hidro lavadora inalámbrica KlrSwp es muy práctica; no necesita preocuparse por enredarse con cables ni depender de mangueras de jardín para obtener agua cuando la traslada a cualquier lugar que necesite limpiar.\n- Nuestra hidro lavadora inalámbrica es liviana y fácil de transportar.\n- Viene con una caja organizadora, lo que hace que el almacenamiento sea muy fácil y ocupe un espacio mínimo.\n- La caja organizadora se puede colocar directamente en el maletero, para que pueda lavar cuando y donde quiera.\n\n**Hidro lavadora a batería:**\n- Con una batería extraíble de gran capacidad de 15000 mAh, satisface las necesidades de limpieza de larga duración.\n- Solo se necesitan de 3 a 4 horas para cargarla y es de larga duración, por lo que nunca más tendrá que preocuparse por quedarse sin batería en medio de la limpieza.\n- Con una potente presión de 900 PSI, puede eliminar fácilmente la suciedad y la grasa difíciles.\n- Esta característica le permite lavar su automóvil en casa fácilmente, ahorrando dinero en servicios de lavado de automóviles profesionales.\n\n**Boquilla 6 en 1 mejorada:**\n- El limpiador portátil viene equipado con una boquilla rociadora 6 en 1 versátil.\n- Esta boquilla ofrece una variedad de opciones de limpieza con ángulos ajustables de 0 a 40 grados, incluidos modos adicionales de espuma y ducha.\n- Estos ajustes permiten un rociado amplio para cubrir superficies grandes o un chorro preciso para abordar manchas difíciles.\n- Ajustar el ángulo de la boquilla es muy conveniente; solo gira la perilla para lograr el modo de rociado de agua deseado.\n\n**Fácil de montar y usar:**\n- Se puede montar en unos minutos siguiendo los pasos de las instrucciones.\n- Su manguera larga le permite moverse sin esfuerzo por su automóvil, lo que garantiza una limpieza profunda desde todos los ángulos.\n- Un control de un solo botón permite un funcionamiento sencillo de la pistola de lavado de automóviles, lo que permite varias funciones de limpieza.\n- Si busca una hidro lavadora portátil potente y versátil que ofrezca comodidad y rendimiento, la hidro lavadora inalámbrica de alta presión KlrSwp es una excelente opción.\n\n**Excelente servicio:**\n- La hidro lavadora portátil KlrSwp es versátil e ideal para una variedad de tareas de limpieza, incluidas motocicletas y automóviles.\n- También es especialmente eficaz para limpiar pisos y rincones de difícil acceso que son difíciles de limpiar manualmente.\n- Es excepcionalmente útil para limpiezas rápidas en patios y porches.\n- No dude en comunicarse con nosotros si tiene alguna pregunta; prometemos responder dentro de las 24 horas.",
+                            "estado":"Nuevo",
+                            "image": "/images/products/HerramientasElectricas/Hidrolavadoras/1_1.jpg",
+                            "image2": "/images/products/HerramientasElectricas/Hidrolavadoras/1_2.jpg",
+                            "image3": "/images/products/HerramientasElectricas/Hidrolavadoras/1_3.jpg",
+                            "video1":"https://www.youtube.com/embed/W_0uO8Gvvqg",
+                            "video2":"https://www.youtube.com/embed/W_0uO8Gvvqg"
                         }
                     ]
                 }
@@ -40,37 +31,49 @@
         },
         {
             "id": 2,
-            "name": "Verduras",
-            "description": "Frescas y saludables.",
+            "name": "Herramientas de medición y precisión",
+            "description": "Instrumentos utilizados para obtener medidas exactas en diferentes proyectos, esenciales en construcción, carpintería y bricolaje.",
             "image": "/imagess/categories/dulce.jpg",
             "subcategories": [
                 {
-                    "id": 102,
-                    "name": "Hortalizas",
-                    "description": "Verduras frescas y nutritivas.",
-                    "image": "/images/subcategories/hortalizas.jpg",
+                    "id": 150,
+                    "name": "Niveles láser",
                     "products": [
                         {
                             "id": 1003,
-                            "name": "Zanahoria",
-                            "price": 0.70,
-                            "description": "Zanahorias frescas.",
-                            "description2":"sssssss",
-                            "adicional": "sasa",
-                            "image": "/imagess/products/zanahoria.png",
-                            "image2": "/imagess/products/zanahoria.png",
-                            "image3": "/imagess/products/zanahoria.png"
-                        },
+                            "name": "Herramienta de nivel láser autonivelante, nivel láser de línea cruzada verde para proyectos deconstrucción",
+                            "price": 280,
+                            "marca":"WEIDDW",
+                            "description": "Herramienta de nivel láser autonivelante, nivel láser de línea cruzada verde para proyectos de construcción, para colgar fotos, bricolaje con base giratoria magnética de 360°,el producto es destacado, comprobado de larga duración; de una marca confiable adaptable a diferentes necesidades con una versatilidad en cada uso.",
+                            "description2":"**Marca:** WEIDDW\n**Material:** Caucho Metal Elastómeros termoplásticos\n**Color:** Gris\n**Estilo:** Láser de línea cruzada\n**Modo de operación:** Automático",
+                            "adicional": "**Modo autonivelante y modo manual: **\n clase láser: clase II, salida de potencia de <1 mW. La herramienta de nivel láser tiene interruptor deslizante que te permite configurar los modos. Cuando se trabaja en modo autonivelante, el nivel láser autonivelante se nivelará automáticamente para la línea horizontal/vertical/cruzada en 3 segundos. El rango de nivelación y compensación es de 4°, de lo contrario el láser parpadeará para indicar fuera de nivel. En el modo manual, la función de autonivelación se desactiva y la cruz se bloquea para usar en cualquier ángulo.\n**Diseño de montaje flexible:**\n Los soportes de rosca de 1/4 -20e permiten asegurar el nivel láser a la mayoría de las superficies metálicas utilizando el soporte magnético (incluido) o montarlo en un trípode (no incluido), lo que le permite girar el nivel láser 360°, proyectar líneas en cualquier posición o ángulo o ajustar la altura desde el trípode. \n**Práctico y resistente: ** \n el nivel láser verde es perfecto para colgar pinturas, proyectos de construcción, decoraciones de bricolaje, etc. para mejorar la eficiencia del trabajo. Protegido por caucho suave TPR en todas las direcciones, lo que hace que el medidor de nivel láser sea resistente a los golpes, al desgaste y a los impactos. La carcasa bien elaborada protege el nivel láser del polvo y las gotas de agua, obteniendo una clasificación IP54 impermeable y resistente al polvo.\n**Nueva tecnología láser y alta precisión:**\nUtilice tecnología láser verde brillante avanzada, este láser es más brillante, más fácil de usar y más confiable. El nivel del lazer proyecta un láser de línea cruzada con una precisión de 1/9 de pulgada a 33 pies, la distancia de trabajo es de 98 pies. ",
+                            "estado":"Nuevo",
+                            "image": "/images/products/HerramientasMedicion/1_1.jpg",
+                            "image2": "/images/products/HerramientasMedicion/1_2.jpg",
+                            "image3": "/images/products/HerramientasMedicion/1_3.jpg",
+                            "video1":"https://www.youtube.com/embed/zNOP_wxGzHQ",
+                            "video2":"https://www.youtube.com/embed/S9MlZrbVtK4"
+                        }
+                    ]
+                },
+                {
+                    "id": 151,
+                    "name": "Medidores de contorno",
+                    "products": [
                         {
-                            "id": 1004,
-                            "name": "Lechuga",
-                            "price": 1.20,
-                            "description": "Lechuga fresca.",
-                            "description2":"sssssss",
-                            "adicional": "sasa",
-                            "image": "/imagess/products/lechuga.png",
-                            "image2": "/imagess/products/lechuga.png",
-                            "image3": "/imagess/products/lechuga.png"
+                            "id": 1051,
+                            "name": "Calibre de duplicación de contornos de 10 con bloqueo ajustable",
+                            "price": 92,
+                            "marca":"MAIHUITE",
+                            "description": "Calibre de duplicación de contornos de 10 pulgadas, bloqueo ajustable, copia precisa de formas irregulares, trazado de carpintería para soldadura irregular, herramienta imprescindible para manitas, construcción de 10 pulgadas (ROJO), es adaptable a diversos necesidades, desde usa para ti.",
+                            "description2":"**Material:** Acrilonitrilo butadieno estireno (ABS)\n**Marca:** MAIHUITE\n**Color:** Rojo y negro\n**Dimensiones del producto:** 10\" de largo x 4,4\" de ancho",
+                            "adicional": "**DUPLICACIÓN PRECISA DE FORMAS:**\n- Copie sin esfuerzo cualquier forma o perfil para trabajar la madera, colocar pisos de baldosas, instalar linóleo y más.\n- Esta herramienta MAIHUITE está diseñada específicamente para replicar molduras detalladas, hacer coincidir los recortes alrededor de los marcos de las puertas, las tuberías e incluso para usar con tuberías sinuosas y marcos circulares.\n- Perfecta para tareas que involucran carrocería de automóviles, carpintería y todo tipo de modelado.\n- Garantiza una duplicación de formas precisa y fácil para sus proyectos.\n- Ya sea que esté trabajando con detalles intrincados o superficies a gran escala, esta herramienta es una adición esencial a su caja de herramientas.\n\n**FUNCIÓN DE AJUSTE Y BLOQUEO:**\n- El calibre de contorno MAIHUITE le permite ajustar fácilmente la tensión para satisfacer sus necesidades específicas.\n- Después de un uso prolongado, puede modificar rápidamente la tensión para una mayor precisión.\n- Una vez que se haya trazado un objeto, simplemente bloquee los dientes del calibre de contorno en su lugar para garantizar trazados perfectos y precisos en todo momento.\n\n**PERFIL PERFECTO:**\n- Fabricado con plástico ABS duradero y de alta resistencia.\n- El calibre de contorno MAIHUITE es resistente a la oxidación y está diseñado para durar.\n- Captura con precisión la forma transversal de cualquier superficie.\n- Con una medición de 10 pulgadas, elimina las conjeturas al trabajar con formas irregulares y proporciona resultados precisos y confiables en todo momento.\n\n**AHORRE TIEMPO Y ENERGÍA:**\n- El calibre de contornos de 10 pulgadas MAIHUITE es una herramienta esencial para carpinteros y aficionados al bricolaje.\n- Le permite duplicar instantáneamente cualquier forma sin la necesidad de transferir perfiles a papel o cartón, ahorrando un tiempo valioso.\n- Simplemente presione el calibre de contornos sobre la superficie, copie el perfil y corte a la forma.\n- Esta herramienta elimina las conjeturas al medir formas irregulares, proporcionando resultados precisos y eficientes en todo momento.\n\n**FÁCIL DE USAR Y ALMACENAR:**\n- El medidor de contornos MAIHUITE crea una plantilla instantánea para formas curvas e irregulares.\n- Simplemente presione los dientes de la herramienta sobre el contorno, trace el perfil y estará listo para cortar.\n- Su diseño compacto hace que sea fácil de almacenar y tener siempre a mano para su próximo proyecto.",
+                            "estado":"Nuevo",
+                            "image": "/images/products/HerramientasMedicion/2_1.jpg",
+                            "image2": "/images/products/HerramientasMedicion/2_2.jpg",
+                            "image3": "/images/products/HerramientasMedicion/2_3.jpg",
+                            "video1":"https://www.youtube.com/embed/Ux1UgmJoGvA",
+                            "video2":"https://www.youtube.com/embed/H6vItVwb--k"
                         }
                     ]
                 }

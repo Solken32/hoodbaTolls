@@ -9,22 +9,38 @@ import { Product } from "@/types/product";
 
 
 export default function ProductInformation({ item }: { item: Product }){
+
+// Función para convertir ** en <strong> para negrita
+  const formatText = (text: string) => {
+    // Reemplaza el ** por <strong> para negrita
+    const boldText = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    return boldText;
+  };
+
+  // Función para reemplazar saltos de línea
+  const renderWithBreaks = (text: string) => {
+    // Primero, formateamos el texto para negrita y luego reemplazamos saltos de línea
+    const formattedText = formatText(text);
+    return formattedText.split('\n').map((line, index) => (
+      <span key={index} dangerouslySetInnerHTML={{ __html: line }} />
+    ));
+  };
     return(
         <section className="overflow-hidden bg-gray-2 py-20">
             <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
                 <Tabs  aria-label="Options"  color="primary">
                     <Tab key="Información" title="Información">
-                        <Card className="mt-4" >
+                        <Card className="mt-4 p-6" >
                             <CardBody className="m-4">
-                                {item.description2}
+                            {renderWithBreaks(item.description2)}
                                 
                             </CardBody>
                         </Card>
                     </Tab>
                     <Tab key="Mas Info" title="Mas Info">
-                        <Card  className="mt-4" >
-                            <CardBody className="m-4">
-                                {item.adicional}                                
+                        <Card  className="mt-4 p-6 " >
+                            <CardBody className="m-4 ">
+                            {renderWithBreaks(item.adicional)}
                             </CardBody>
                         </Card>
                     </Tab>
@@ -49,7 +65,7 @@ export default function ProductInformation({ item }: { item: Product }){
                                     <div className="flex justify-center">
                                         <iframe
                                         className="w-full aspect-video"
-                                        src="https://www.youtube.com/embed/5EpyN_6dqyk"
+                                        src={item.video1}
                                         title="Video 1"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -61,7 +77,7 @@ export default function ProductInformation({ item }: { item: Product }){
                                     <div className="flex justify-center">
                                         <iframe
                                         className="w-full aspect-video"
-                                        src="https://www.youtube.com/embed/TxUdlC0057s"
+                                        src={item.video2}
                                         title="Video 2"
                                         frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

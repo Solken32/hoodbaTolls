@@ -27,11 +27,11 @@ export default function ProductItem({ item }: { item: Product }) {
                 </h3>
 
                 
-                <h3 className=" gap-36font-medium text-dark ease-out duration-200 hover:text-blue mb-1.5">
+                {/*<h3 className=" gap-36font-medium text-dark ease-out duration-200 hover:text-blue mb-1.5">
                     <span className="text-dark">S/ {item.price}</span>
                     
 
-                </h3>
+                </h3> */}
 
                 <span className=" font-medium text-lg">
                     <button  onClick={(e) => {

@@ -345,7 +345,7 @@ const Footer = () => {
               <div className="flex flex-wrap items-center gap-6">
                 <a href="#" aria-label="payment system with yape">
                   <Image
-                    src="/imagess/payment/yape.png"
+                    src="/images/payment/yape.png"
                     alt="Yape"
                     width={45}
                     height={15}
@@ -361,7 +361,7 @@ const Footer = () => {
                 </a> */}
                 <a href="#" aria-label="payment system with efectivo">
                   <Image
-                    src="/imagess/payment/efectivo.png"
+                    src="/images/payment/efectivo.png"
                     alt="efectivo"
                     width={45}
                     height={22}
@@ -369,7 +369,7 @@ const Footer = () => {
                 </a>
                 <a href="#" aria-label="payment system with debito">
                   <Image
-                    src="/imagess/payment/card.svg"
+                    src="/images/payment/card.svg"
                     alt="card debito"
                     width={56}
                     height={22}

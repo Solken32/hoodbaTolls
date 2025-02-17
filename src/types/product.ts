@@ -1,6 +1,7 @@
 export type Product =  {
     id: number;
     name: string;
+    estado: string;
     price: number;
     image: string;
     image2: string;
@@ -8,6 +9,8 @@ export type Product =  {
     description: string;
     description2: string;
     adicional: string;
+    video1: string;
+    video2: string;
 }
 
 export type Categories= {
